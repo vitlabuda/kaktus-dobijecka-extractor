@@ -289,7 +289,7 @@ def save_dobijecka_data(aggregated_dobijecka_data: list[DobijeckaData], output_d
 def save_dobijecka_data_to_csv(aggregated_dobijecka_data: list[DobijeckaData], filepath: str) -> None:
     assert aggregated_dobijecka_data
 
-    with open(filepath, "w") as file:
+    with open(filepath, "w", encoding="utf-8") as file:
         csv_writer = csv.writer(file, **Settings.OUTPUT_CSV_FORMAT_PARAMS)
 
         csv_writer.writerow(field.name for field in dataclasses.fields(aggregated_dobijecka_data[0]))
@@ -297,7 +297,7 @@ def save_dobijecka_data_to_csv(aggregated_dobijecka_data: list[DobijeckaData], f
 
 
 def save_dobijecka_data_to_json(aggregated_dobijecka_data: list[DobijeckaData], filepath: str) -> None:
-    with open(filepath, "w") as file:
+    with open(filepath, "w", encoding="utf-8") as file:
         json.dump([item.to_serializable_dict() for item in aggregated_dobijecka_data], file, indent=Settings.OUTPUT_JSON_INDENT)
 
 
