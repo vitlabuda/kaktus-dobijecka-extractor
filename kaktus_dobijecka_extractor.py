@@ -289,7 +289,7 @@ def save_dobijecka_data(aggregated_dobijecka_data: list[DobijeckaData], output_d
 def save_dobijecka_data_to_csv(aggregated_dobijecka_data: list[DobijeckaData], filepath: str) -> None:
     assert aggregated_dobijecka_data
 
-    with open(filepath, "w", encoding="utf-8") as file:
+    with open(filepath, "w", encoding="utf-8", newline="") as file:
         csv_writer = csv.writer(file, **Settings.OUTPUT_CSV_FORMAT_PARAMS)
 
         csv_writer.writerow(field.name for field in dataclasses.fields(aggregated_dobijecka_data[0]))
