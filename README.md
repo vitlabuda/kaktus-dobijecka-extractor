@@ -3,7 +3,7 @@
 This repository contains a "quick & dirty" Python script, 
 [`kaktus_dobijecka_extractor.py`](kaktus_dobijecka_extractor.py), for extracting information about announcements of
 **Dobíječka**, a happy hour event organized by [**Kaktus**](https://www.mujkaktus.cz/homepage), a Czech MVNO, during 
-which one can get their prepaid credit recharges doubled.
+which one can get their prepaid credit top-ups doubled.
 
 The script extracts the announcements from multiple ["Novinky z květináče"](https://www.mujkaktus.cz/novinky) web pages 
 (from the "live" one and from archived ones on 
