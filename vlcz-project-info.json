@@ -1,0 +1,10 @@
+{
+  "ignore": false,
+  "display_name": "Kaktus Dobíječka extractor",
+  "description": null,
+  "programming_language": "Python",
+  "priority": 600,
+  "category_id": "others",
+  "category_display_name": "Others",
+  "category_priority": 500
+}
